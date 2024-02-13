@@ -876,6 +876,7 @@ GameObject:
   - component: {fileID: 1108507686}
   - component: {fileID: 1108507685}
   - component: {fileID: 1108507684}
+  - component: {fileID: 1108507687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -984,19 +985,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ffd4b96ce1bf0488eeaa6753ee640a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_text: {fileID: 14337318}
   cam: {fileID: 1622083092}
   invert_x: 0
   invert_y: 0
   invert_factor_x: 1
   invert_factor_y: 1
   sensitivity: 0.5
-  max_speed: 6
-  acceleration: 60
-  gravity: 15
-  stop_speed: 0.5
-  jump_impulse: 10
-  friction: 4
 --- !u!114 &1108507685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,6 +1095,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1108507687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108507679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac98e72016658b949ad1c383663b7333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1489929724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1320,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622083089}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1622083092
 Camera:
   m_ObjectHideFlags: 0
